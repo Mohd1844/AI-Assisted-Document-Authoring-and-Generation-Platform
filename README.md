@@ -65,5 +65,56 @@ Frontend:
 cd frontend
 npm start
 
+How to Use
+1. Register and Login
+Open the frontend in your browser (http://localhost:3000).
 
+Click "Register" to create a new account with your email and password.
+
+After registration, log in using your credentials to access the dashboard.
+
+2. Create a New Project
+Click "Create New Project".
+
+Choose your document type: "Word Document" for .docx or "PowerPoint" for .pptx.
+
+Enter a project name and provide the main topic or prompt.
+
+3. Configure Document Structure
+For Word:
+
+Define section headings (e.g., Introduction, Overview, Conclusion).
+
+For PowerPoint:
+
+Define slide titles (e.g., Introduction, Main Points, Summary).
+
+Optionally, use the "AI Suggest" feature to auto-generate sections or slide titles based on your topic.
+
+4. Generate Content
+Click "Create & Generate" to let the AI fill in the content for each section or slide.
+
+Wait for the generation process to complete; content will appear for each section/slide in the editor.
+
+5. Refine Content
+Select any section or slide to view its content.
+
+Use refinement tools:
+
+Edit text directly or via AI-powered suggestions ("Refine" button).
+
+Provide feedback using Like/Dislike buttons.
+
+Add comments or notes for each section or slide.
+
+6. Export Document or Presentation
+When satisfied with the content, click the "Export" button.
+
+For Word documents:
+
+A .docx file will download, ready to open in Microsoft Word or compatible processors.
+
+For PowerPoint presentations:
+
+A .pptx file will download, optimized to prevent content overflow or overlap. Open in PowerPoint or compatible software.
 
