@@ -1,0 +1,136 @@
+.project-config {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 92vh;
+  background: linear-gradient(120deg, #e4e7fa 0%, #fff 60%);
+}
+
+.config-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(78, 78, 255, 0.08);
+  width: 510px;
+  padding: 32px 34px 28px 34px;
+}
+
+.config-step h2 {
+  margin: 10px 0 17px 0;
+  font-size: 23px;
+  color: #353697;
+}
+
+.document-type-selector {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.type-card {
+  flex: 1;
+  background: #f5f8ff;
+  border-radius: 11px;
+  padding: 16px 13px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(133, 148, 245, 0.08);
+  border: 2.5px solid transparent;
+  text-align: center;
+  transition: border-color 0.17s, background 0.2s;
+}
+
+.type-card.selected {
+  border-color: #667eea;
+  background: #eef1fc;
+}
+
+.type-icon {
+  font-size: 40px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #464786;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.6px solid #c7cbe9;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  background: #f8faff;
+  transition: border-color 0.16s;
+}
+
+input:focus, textarea:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.btn-ai, .btn-add {
+  padding: 10px 19px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.19s;
+}
+
+.btn-ai {
+  background: #ffeeaa;
+  color: #d7a91e;
+}
+
+.btn-add {
+  margin-top: 9px;
+  background: #d8f3ff;
+  color: #44a3d9;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sections-editor, .slides-editor {
+  margin-top: 8px;
+}
+
+.section-item, .slide-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+
+.slide-number {
+  background: #ece6fd;
+  color: #8563d8;
+  border-radius: 7px;
+  padding: 2px 11px;
+  font-weight: bold;
+}
+
+.section-item input, .slide-item input {
+  flex: 1;
+}
+
+.section-item button, .slide-item button {
+  font-size: 16px;
+  color: #c42b2b;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

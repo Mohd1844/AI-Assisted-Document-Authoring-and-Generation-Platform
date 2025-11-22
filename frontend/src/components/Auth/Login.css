@@ -1,0 +1,113 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-box {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(59, 62, 255, 0.12);
+  padding: 38px 36px;
+  min-width: 320px;
+  width: 350px;
+}
+
+.login-header h1 {
+  color: #667eea;
+  margin-bottom: 8px;
+  font-size: 1.7rem;
+}
+
+.login-header p {
+  color: #888;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0 10px 0;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 10px 0;
+  background: #eee;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+  color: #667eea;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-tabs button.active {
+  background: #667eea;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.93rem;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1.7px solid #ddd;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 7px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:disabled {
+  background: #ccd3fc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  padding: 9px 0;
+  border-radius: 7px;
+}
+
+.message.success {
+  color: #26791c;
+  background: #ccf1d0;
+}
+
+.message.error {
+  color: #b32828;
+  background: #ffe1e1;
+}
