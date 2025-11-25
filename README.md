@@ -1,4 +1,4 @@
-Brief Description
+
 An AI-powered web application automating the creation of professional Word documents (.docx) and PowerPoint presentations (.pptx). Users can register, log in, configure and generate documents or slides with AI-generated content, refine text via feedback, and export finished files. Built with FastAPI (backend) and React (frontend), the system features user-friendly design and intelligent slide-splitting to prevent overflow. Suitable for business, education, and marketing workflows.
 
 FEATURES
