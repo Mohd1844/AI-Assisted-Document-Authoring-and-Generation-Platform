@@ -3,26 +3,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #0a0e27;
+  background-image:
+    radial-gradient(at 20% 30%, rgba(88, 101, 242, 0.2) 0px, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(139, 92, 246, 0.2) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
 }
 
 .login-box {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 8px 32px rgba(59, 62, 255, 0.12);
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(88, 101, 242, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 80px rgba(88, 101, 242, 0.10);
   padding: 38px 36px;
   min-width: 320px;
   width: 350px;
 }
 
 .login-header h1 {
-  color: #667eea;
+  background: linear-gradient(135deg, #b6c6fc 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 8px;
   font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
 }
 
 .login-header p {
-  color: #888;
+  color: #d1d5db;
   font-size: 1rem;
   margin: 0;
 }
@@ -36,18 +47,20 @@
 .auth-tabs button {
   flex: 1;
   padding: 10px 0;
-  background: #eee;
-  border: none;
-  border-radius: 8px 8px 0 0;
+  background: rgba(55, 65, 81, 0.5);
+  border: 1px solid rgba(88, 101, 242, 0.2);
+  border-radius: 8px;
   font-weight: 600;
-  color: #667eea;
+  color: #c7cfff;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
 }
 
 .auth-tabs button.active {
-  background: #667eea;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.18);
 }
 
 .form-group {
@@ -55,59 +68,80 @@
 }
 
 .form-group label {
-  color: #444;
+  color: #e0e6ed;
   display: block;
   margin-bottom: 6px;
-  font-size: 0.93rem;
+  font-size: 0.95rem;
 }
 
 input[type="email"], input[type="password"] {
   width: 100%;
-  padding: 10px 13px;
-  border: 1.7px solid #ddd;
-  border-radius: 7px;
+  padding: 12px 14px;
+  border: 1px solid rgba(88, 101, 242, 0.3);
+  border-radius: 8px;
   font-size: 1rem;
   margin-bottom: 5px;
-  transition: border-color 0.2s;
+  background: rgba(31, 41, 55, 0.7);
+  color: #f1f5fa;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #96a3c7;
 }
 
 input:focus {
-  border-color: #667eea;
+  border-color: #a5b4fc;
+  background: rgba(31, 41, 55, 0.95);
   outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
 .btn-primary {
-  background: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #91a3f5 100%);
   color: #fff;
   border: none;
   padding: 12px 0;
   width: 100%;
-  border-radius: 7px;
-  font-weight: 600;
+  border-radius: 8px;
+  font-weight: 700;
   margin-top: 10px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.16);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.22);
 }
 
 .btn-primary:disabled {
-  background: #ccd3fc;
-  color: #777;
+  background: rgba(75, 85, 99, 0.6);
+  color: #9ca3af;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 .message {
   margin-bottom: 10px;
-  font-size: 0.98rem;
-  padding: 9px 0;
-  border-radius: 7px;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-weight: 500;
 }
 
 .message.success {
-  color: #26791c;
-  background: #ccf1d0;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.13);
+  border-color: rgba(52, 211, 153, 0.22);
 }
 
 .message.error {
-  color: #b32828;
-  background: #ffe1e1;
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(248, 113, 113, 0.19);
 }
+
